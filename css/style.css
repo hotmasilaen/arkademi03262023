@@ -1,0 +1,139 @@
+.text-yellow {
+    color: hwb(0 17% 35%)2a;
+}
+
+.heading {
+    color: white;
+    /* background-color: burlywood; */
+    background-image: url("https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 310px;
+    max-height: 350px;
+    min-height: 100px;
+    width: 500px;
+    min-width: 200px;
+    max-width: 550px; */
+}
+
+#btn-masuk {
+    background-color: white;
+    color: #006cbb;
+    /* border: 1px solid #006cbb; */
+    border-width: 1px;
+    border-color: #006cbb;
+    border-style: solid;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 10px 20px;
+    letter-spacing: 0.5px;
+    /* padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card {
+    border: 1px solid grey;
+    padding: 20px;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.blur {
+    filter: saturate(0.5);
+    height: 0;
+    /* transition: height 2s;
+    transition-delay: 2s; */
+    /* animation: kotakBergerak 2s ease 1 alternate forwards running; */
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    ;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: kotakBergerak;
+    animation-timeline: auto;
+}
+
+/* .blur:hover {
+    height: 350px;
+} */
+
+.blur-2 {
+    filter: saturate(0.5);
+    height: 0;
+    /* animation: kotakBergerak 2s ease 1 alternate forwards running; */
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    ;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: kotakBergerak;
+    animation-timeline: auto;
+}
+
+@keyframes kotakBergerak {
+    from {
+        width: 100%;
+        height: 0;
+    }
+
+    to {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+.heading h1 {
+    font-size: 2vw;
+}
+
+/* ---------------------------------------------------------- */
+
+.container {
+    display: flex !important;
+    align-items: center;
+    margin: 5rem 5rem;
+}
+
+.sub-conatiner {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.text-blue {
+    color: #006cbb;
+}
+
+.btn-karier {
+    background: linear-gradient(261.28deg, #ff9417 18.17%, #ff8017 84.69%);
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-mentor {
+        display: none;
+    }
+
+    .container {
+        margin: 2rem 2rem;
+    }
+}

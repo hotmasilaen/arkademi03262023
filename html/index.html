@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-yellow {
+            background-color: yellow;
+            width: fit-content;
+        }
+
+        td,
+        tr,
+        th {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function validationForm() {
+            let x = document.forms["myForm"][" fname "].value;
+            if (x == '') {
+                alert('Nama tidak boleh kosong!')
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Hari ini belajar HTML bersama Arkademi -->
+    <form name="myForm" onsubmit="return validationForm()">
+        Name: <input type="text" name=" fname " />
+        <input type="submit" value="Submit" />
+    </form>
+    <br />
+    <br />
+    <br />
+    <table>
+        <thead>
+            <tr>
+                <td><strong>Nama</strong></td>
+                <td><strong>Alamat</strong></td>
+                <td><strong>No Hp</strong></td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08327849793</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08327849793</td>
+            </tr>
+            <tr>
+                <td>Farhan</td>
+                <td>Medan</td>
+                <td>08327849793</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>
+        Kursus Online dari<br />
+        Lembaga Pelatihan Resmi untuk<br />
+        Tingkatkan Karier Profesionalmu
+    </h1>
+    <h3>
+        Kursus Online dari<br />
+        Lembaga Pelatihan Resmi untuk<br />
+        Tingkatkan Karier Profesionalmu
+    </h3>
+    <p>
+        Paragraf adalah kumpulan dari beberapa kalimat. Pada web, Paragraf biasanya digunakan untuk menampilkan teks
+        atau artikel.
+    </p>
+    <a href="https://buildwithangga.com/tips/5-website-untuk-mencari-inspirasi-website-design">
+        <b>5 Website Untuk Mencari Inspirasi Website Design</b>
+    </a>
+    <br />
+    <img src="https://arkademi.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimage-new-hero-comp.f8b58ff9.webp&w=750&q=75"
+        alt="foto-mentor" />
+    <br />
+    <mark>
+        Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+        browser
+        today!
+    </mark>
+    <p class="text-yellow">
+        Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web
+        browser
+        today!
+    </p>
+
+</body>
+
+</html>

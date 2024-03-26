@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="root"></p>
+    <p id="root-2"></p>
+    <script>
+        // const nama = "Farhan";
+        // const Nama = "Farhan";
+        // const NaMa = "Farhan";
+
+        const umur = 20;
+        let alamat = 'Medan';
+        alamat = "Jakarta";
+
+        console.log('Alamat: ', alamat);
+        // alert('Alamat: ' + alamat);
+        document.getElementById('root').innerHTML = 'Alamat: ' + alamat;
+
+        const number1 = '100'; //string
+        const number2 = 10; //number
+        const hasil = number1 + number2;
+        console.log('Hasil penjumlahan: ', hasil);
+
+        const dataSiswa = '';
+        // dataSiswa.map(() => console.log())
+
+        const tas1 = 10559000;
+        const tas2 = 2079000;
+        const diskonTas1 = tas1 - (tas1 * 0.32);
+        const diskonTas2 = tas2 - (tas2 * 0.1);
+        console.log('Harga tas 1: ', diskonTas1);
+        console.log('Harga tas 2: ', diskonTas2);
+        console.log('Total bayar: ', diskonTas1 + diskonTas2);
+
+
+        const existPswd = 'hotma123';
+        const incommingPswd = 'hotma123';
+        // console.log('Apakah password match? ', existPswd == incommingPswd);
+        console.log('Apakah password tidak match? ', existPswd != incommingPswd);
+
+
+        const val1 = 200;
+        const val2 = 200;
+        // console.log('Apakah identical? ', val1 === val2);
+        console.log('Apakah tidak identical? ', val1 !== val2);
+
+        const noHP = '086666667777';
+        console.log('+62', noHP.slice(1, 12));
+        console.log(noHP.replace('0', '+62'));
+
+        const umurSiswa = 25;
+        if (umurSiswa == 17) {
+            console.log('Umur kamu sudah 17 tahun.');
+        } else if (umurSiswa > 17) {
+            console.log('Umur kamu diatas 17 tahun.');
+        }
+        else {
+            console.log('Umur kamu dibawah 17 tahun.');
+        }
+
+        const hari = 6
+        switch (hari) {
+            case 1:
+                console.log('Hari ini hari Senin.');
+                break;
+            case 2:
+                console.log('Hari ini hari Selasa');
+                break;
+            case 3:
+                console.log('Hari ini hari Rabu');
+                break;
+            default:
+                console.log('Hari ini hari Libur');
+                break;
+        }
+
+        for (var i = 1; i <= 5; i++) {
+            console.log('Number: ', i);
+        }
+
+        // const fruits = ['Apple', 'Banana', 'Mango', 'Orange'];
+        // for (var i in fruits) {
+        //     console.log('Buah: ', fruits[i]);
+        // }
+
+        const dataMahasiswa = {
+            nama: 'Fajar',
+            umur: 20,
+        }
+
+        for (var i in dataMahasiswa) {
+            console.log('Data: ', dataMahasiswa[i]);
+        }
+
+    </script>
+</body>
+
+</html>
