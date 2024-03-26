@@ -17,6 +17,7 @@
 
     .container {
         display: flex;
+        margin: 0 12rem;
     }
 
     .hero-new-wrapper {
@@ -36,6 +37,20 @@
     .flex>img {
         margin-right: 20px;
     }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            margin: 0 2rem;
+        }
+
+        .container>img {
+            display: none;
+        }
+
+        .hero-new-wrapper {
+            min-width: 42.285vw;
+            height: 8.932vw;
+        }
 </style>
 
 <body>
